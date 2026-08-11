@@ -1,0 +1,11 @@
+create_drinks_table = """
+    CREATE TABLE IF NOT EXISTS drinks (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name_drink TEXT NOT NULL,
+        price INTEGER
+    )
+"""
+
+insert_drink = "INSERT INTO drinks (name_drink, price) VALUES (?, ?)"
+
+select_drink = 'SELECT name_drink, price FROM drinks'
