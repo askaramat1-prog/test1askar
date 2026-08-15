@@ -11,6 +11,7 @@ class Movie(StatesGroup):
     genre = State()
     rating = State()
 
+
 @router_fsm.message(Command("form"))
 async def start_form(message: Message, state: FSMContext):
     await state.set_state(Movie.title)
