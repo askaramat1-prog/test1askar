@@ -6,7 +6,7 @@ from db.main_db import create_table
 
 
 async def on_startup():
-    await create_table()
+    create_table()
 
 
 async def main():
